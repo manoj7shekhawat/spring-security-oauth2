@@ -3,7 +3,9 @@ buildscript {
 		springBootVersion = '1.5.10.RELEASE'
 	}
 	repositories {
-		mavenCentral()
+		maven {
+			url "http://central.maven.org/maven2"
+		}
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -19,7 +21,9 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
-	mavenCentral()
+	maven {
+		url "http://central.maven.org/maven2"
+	}
 }
 
 
@@ -35,6 +39,9 @@ dependencies {
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '1.5.9.RELEASE'
 	// https://mvnrepository.com/artifact/org.springframework.security.oauth/spring-security-oauth2
 	compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2', version: '2.2.1.RELEASE'
+	// https://mvnrepository.com/artifact/org.webjars/js-cookie
+	compile group: 'org.webjars', name: 'js-cookie', version: '2.1.0'
+
 
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
