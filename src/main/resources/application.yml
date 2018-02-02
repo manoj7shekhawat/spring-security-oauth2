@@ -1,10 +1,11 @@
 security:
   oauth2:
     client:
-      clientId: 393363534440542
-      clientSecret: f2a92e9bb1a22a949be1cbbd773ee4ad
-      accessTokenUri: https://graph.facebook.com/oauth/access_token
-      userAuthorizationUri: https://www.facebook.com/dialog/oauth
+      clientId: 105f2e6553b44c1fb0108ec70444aa59
+      clientSecret: 5ac194f1-67e4-4db9-8d29-3cec93bb520c
+      accessTokenUri: https://identity.oraclecloud.com
+      userAuthorizationUri: https://idcs-5d917a76918b4d42a2cc48eebd8c8f74.identity.c9dev1.oc9qadev.com:443/oauth2/v1/authorize
+      scope: "urn:opc:idm:__myscopes__"
       tokenName: oauth_token
       authenticationScheme: query
       clientAuthenticationScheme: form
