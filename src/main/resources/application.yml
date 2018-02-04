@@ -8,7 +8,7 @@ security:
       scope: "urn:opc:idm:__myscopes__"
       tokenName: access_token
     resource:
-      userInfoUri: https://graph.facebook.com/me
+      userInfoUri: https://idcs-5d917a76918b4d42a2cc48eebd8c8f74.identity.c9dev1.oc9qadev.com/oauth2/v1/userinfo
 logging:
   level:
     root: DEBUG
