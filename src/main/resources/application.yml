@@ -5,8 +5,10 @@ security:
       clientSecret: 5ac194f1-67e4-4db9-8d29-3cec93bb520c
       accessTokenUri: https://idcs-5d917a76918b4d42a2cc48eebd8c8f74.identity.c9dev1.oc9qadev.com/oauth2/v1/token
       userAuthorizationUri: https://idcs-5d917a76918b4d42a2cc48eebd8c8f74.identity.c9dev1.oc9qadev.com/oauth2/v1/authorize
-      scope: "urn:opc:idm:__myscopes__"
+      scope: openid
       tokenName: access_token
+      authenticationScheme: header
+      clientAuthenticationScheme: header
     resource:
       userInfoUri: https://idcs-5d917a76918b4d42a2cc48eebd8c8f74.identity.c9dev1.oc9qadev.com/oauth2/v1/userinfo
 logging:
