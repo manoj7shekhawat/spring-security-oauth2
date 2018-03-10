@@ -1,0 +1,9 @@
+pluginRepositories {
+    maven {
+        url '"http://central.maven.org/maven2"'
+    }
+    gradlePluginPortal()
+}
+
+rootProject.name = 'spring-security-oauth2'
+
